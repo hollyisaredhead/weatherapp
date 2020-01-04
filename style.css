@@ -1,0 +1,12 @@
+.navbar-brand{
+   color: white;
+   align-items: center;
+
+}
+.container{
+    margin-top: 10px;
+}
+
+#weather{
+    border: solid black 1px;
+}
