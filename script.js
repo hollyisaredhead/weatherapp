@@ -43,7 +43,7 @@ function returnWeatherForecast(cityName) {
       let weatherIcon = `https://openweathermap.org/img/wn/${forecastInfo[i].weather[0].icon}.png`;
 
       frcstDiv.append(`
-      <div class="col-md">
+      <div class="col-sm-3 col-lg-3">
           <div class="card text-white bg-primary">
               <div class="card-body">
                   <h4>${forecastDate.getMonth() + 1}/${forecastDate.getDate()}/${forecastDate.getFullYear()}</h4>
@@ -108,10 +108,10 @@ function writeSearchHistory(array) {
 }
 
 // Get a deafult weather search
-returnCurrentWeather("Toronto");
-returnWeatherForecast("Toronto");
+returnCurrentWeather("");
+returnWeatherForecast("");
 
-$("#submitCity").click(function () {
+$("#addCity").click(function () {
   event.preventDefault();
   let cityName = $("#cityInput").val();
   returnCurrentWeather(cityName);
