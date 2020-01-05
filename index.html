@@ -8,10 +8,10 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg></script>
 
-    <nav class="navbar navbar-light bg-dark">
+    <nav class="navbar navbar-light bg-dark justify-content-center">
         <span class="navbar-brand mb-0">
             <h1>Weather Dashboard</h1>
         </span>
@@ -27,24 +27,31 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <h5>Search for a City:</h5>
-            
-                <!--search input-->
-                <input type="text" id="locationInput"><input id="addLocation" class="fa fa-search btn-outline-primary"
-                    type="submit" value="">
 
 
-                    <!--this is where the search history will be-->
-                <div id="searchedLocations">
-                    <br><br>
+                <!--this is where the city will be inputted by users-->
+                <form id="city-form">
+                    <label for="city-input">
+                        <h5>Search for a City:</h5>
+                    </label><br>
+                    <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+
+                    <!-- Button triggers new location to be added -->
+                    <div class="input-group-append">
+                        <button type="submit" id="addCity" class="btn btn-outline-primary">Search</button>
+                    </div>
+
+                </form>
+                <div id="previousSearch" class="btn-group-vertical">
+
                 </div>
-
-               
 
             </div>
             <div class="col-sm-8">
                 <!--Location,date,temperature,humidity,wind speed, uv index will be dumped here-->
-                <div id="weather">hi</div>
+                <div id="currentWeather">
+                    <h3>Current Weather Here</h3>
+                </div>
             </div>
 
             <div class="col-sm-4"></div>
@@ -60,7 +67,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
 </body>
