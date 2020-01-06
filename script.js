@@ -57,6 +57,8 @@ function returnWeatherForecast(cityName) {
     })
   })
 };
+
+
 function returnUVIndex(coordinates) {
   let queryURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${coordinates.lat}&lon=${coordinates.lon}&APPID=${apiKey}`;
 
@@ -65,6 +67,7 @@ function returnUVIndex(coordinates) {
     let uvSeverity = "green";
     let textColor = "white";
 
+    //show different colors based on uv
     if (currUVIndex >= 11) {
       uvSeverity = "purple";
     }
