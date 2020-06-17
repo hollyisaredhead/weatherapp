@@ -20,10 +20,10 @@ function returnCurrentWeather(cityName) {
     let weatherIcon = `https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
 
     currentWeatherDiv.html(`
-    <h2>${response.name}, ${response.sys.country} (${currTime.getMonth() + 1}/${currTime.getDate()}/${currTime.getFullYear()})<img src=${weatherIcon} height="70px"></h2>
-    <p>Temperature: ${response.main.temp} &#176;C</p>
-    <p>Humidity: ${response.main.humidity}%</p>
-    <p>Wind Speed: ${response.wind.speed} m/s</p>
+    <h4>${response.name}, ${response.sys.country} (${currTime.getMonth() + 1}/${currTime.getDate()}/${currTime.getFullYear()})<img src=${weatherIcon} height="70px"></h4>
+    <p>Temperature: ${response.main.temp} &#176;C &nbsp;
+    Humidity: ${response.main.humidity}% &nbsp;
+    Wind Speed: ${response.wind.speed} m/s</p>
     `, returnUVIndex(response.coord))
     createHistoryButton(response.name);
   })

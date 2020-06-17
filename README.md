@@ -1,6 +1,8 @@
 # weatherapp
 Weatherapp provides users with up to date weather info. This info will help travelers see the weather outlook for multiple cities. 
 
+To use the app enter a city in the search field on the left sidebar. Weather information will populate to the right of the sidebar. 
+
 The app displays the following info: 
 1. City
 2. Date
@@ -8,3 +10,6 @@ The app displays the following info:
 4. Humidity 
 5. Wind Speed
 6. UV index 
+
+View here: https://hollyisaredhead.github.io/weatherapp/
+
