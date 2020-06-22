@@ -1,7 +1,7 @@
 # weatherapp
 Weatherapp provides users with up to date weather info. This info will help travelers see the weather outlook for multiple cities. 
 
-To use the app enter a city in the search field on the left sidebar. Weather information will populate to the right of the sidebar. 
+To use the app enter a city in the search field at the top of the page. Weather information will populate to the right of the sidebar. 
 
 The app displays the following info: 
 1. City
