@@ -43,10 +43,10 @@ function returnWeatherForecast(cityName) {
       let weatherIcon = `https://openweathermap.org/img/wn/${forecastInfo[i].weather[0].icon}.png`;
 
       frcstDiv.append(`
-      <div class="col-sm-3 col-lg-3">
+      <div class="col-sm-3 col-lg-2">
           <div class="card text-white bg-primary">
               <div class="card-body">
-                  <h4>${forecastDate.getMonth() + 1}/${forecastDate.getDate()}/${forecastDate.getFullYear()}</h4>
+                  <h6>${forecastDate.getMonth() + 1}/${forecastDate.getDate()}/${forecastDate.getFullYear()}</h6>
                   <img src=${weatherIcon} alt="Icon">
                   <p>Temp: ${forecastInfo[i].main.temp} &#176;C</p>
                   <p>Humidity: ${forecastInfo[i].main.humidity}%</p>

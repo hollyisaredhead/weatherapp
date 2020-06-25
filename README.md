@@ -13,3 +13,4 @@ The app displays the following info:
 
 View here: https://hollyisaredhead.github.io/weatherapp/
 
+![WeatherApp](WeatherView.png)
