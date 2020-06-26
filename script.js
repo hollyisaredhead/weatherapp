@@ -23,7 +23,7 @@ function returnCurrentWeather(cityName) {
     <h4>${response.name}, ${response.sys.country} (${currTime.getMonth() + 1}/${currTime.getDate()}/${currTime.getFullYear()})<img src=${weatherIcon} height="70px"></h4>
     <p>Temperature: ${response.main.temp} &#176;C &nbsp;
     Humidity: ${response.main.humidity}% &nbsp;
-    Wind Speed: ${response.wind.speed} m/s</p>
+    Wind Speed: ${response.wind.speed} m/s </p>
     `, returnUVIndex(response.coord))
     createHistoryButton(response.name);
   })
@@ -43,7 +43,7 @@ function returnWeatherForecast(cityName) {
       let weatherIcon = `https://openweathermap.org/img/wn/${forecastInfo[i].weather[0].icon}.png`;
 
       frcstDiv.append(`
-      <div class="col-sm-3 col-lg-2">
+      <div class="col-sm-3 col-md-4 col-lg-2">
           <div class="card text-white bg-primary">
               <div class="card-body">
                   <h6>${forecastDate.getMonth() + 1}/${forecastDate.getDate()}/${forecastDate.getFullYear()}</h6>
