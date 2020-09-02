@@ -14,7 +14,18 @@
   
 
       <nav class="navbar navbar-dark bg-dark justify-content-center" style="background-color: #e3f2fd;">
-       <h2>Weather Forecast</h2>
+       <h2>Weather Forecast:&nbsp;</h2>
+       <form id="city-form" class="form-inline">
+        <label for="city-input">
+            <h5> &nbsp;</h5>
+        </label><br>
+        <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+        
+        <!-- Button triggers new location to be added -->
+        <div class="input-group-append">
+            <button type="submit" id="addCity" class="btn btn-dark">SEARCH</button>
+           
+        </div>
       </nav>
 
 </head>
@@ -24,19 +35,19 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-12 col-lg-12">
+            <!-- <div class="col-sm-12 col-lg-12"> -->
 
 
                 <!--this is where the city will be inputted by users-->
               
-                <form id="city-form" class="form-inline">
+                <!-- <form id="city-form" class="form-inline">
                     <label for="city-input">
                         <h5>Search for a City: &nbsp;</h5>
                     </label><br>
                     <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
-                    
+                     -->
                     <!-- Button triggers new location to be added -->
-                    <div class="input-group-append">
+                    <!-- <div class="input-group-append">
                         <button type="submit" id="addCity" class="btn btn-dark">SEARCH</button>
                        
                     </div>
@@ -46,7 +57,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
             <div class="col-sm-12 col-lg-12">
                 <!--Location,date,temperature,humidity,wind speed, uv index will be dumped here-->
                 <div id="currentWeather">
