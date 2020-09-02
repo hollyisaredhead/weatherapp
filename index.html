@@ -12,9 +12,12 @@
     <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg></script>
 
   
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 
       <nav class="navbar navbar-dark bg-dark justify-content-center" style="background-color: #e3f2fd;">
-       <h2>Weather Forecast:&nbsp;</h2>
+       <h2>Weather Forecast &nbsp;</h2>
        <form id="city-form" class="form-inline">
         <label for="city-input">
             <h5> &nbsp;</h5>
@@ -23,7 +26,7 @@
         
         <!-- Button triggers new location to be added -->
         <div class="input-group-append">
-            <button type="submit" id="addCity" class="btn btn-dark">SEARCH</button>
+            <button type="submit" id="addCity" class="btn btn-dark"><i class="fas fa-search"></i></button>
            
         </div>
       </nav>
@@ -59,9 +62,9 @@
 
             </div> -->
             <div class="col-sm-12 col-lg-12">
-                <!--Location,date,temperature,humidity,wind speed, uv index will be dumped here-->
+                <!--Location,date,temperature,humidity,wind speed, uv index will appear here-->
                 <div id="currentWeather">
-                    <h3>Current Weather Here</h3>
+                    <h3>Current Weather</h3>
                 </div>
 
                 <h5>5-Day Forecast:</h5>
